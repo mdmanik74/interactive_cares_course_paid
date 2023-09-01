@@ -13,28 +13,11 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter Demo Test'),
         ),
-
-        //scaffold widget
-        drawer: const Drawer(
-            child: Column(
-          children: [
-            ListTile(
-              leading: Icon(Icons.home),
-              title: Text("Home"),
-            ),
-            ListTile(
-              leading: Icon(Icons.home),
-              title: Text("Home"),
-            ),
-            ListTile(
-              leading: Icon(Icons.home),
-              title: Text("Home"),
-            ),
-          ],
-        )),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: const Icon(Icons.add),
+        body: const Center(
+          child: Text(
+            'Welcome Main Page',
+            style: TextStyle(color: Colors.black, fontSize: 40.0),
+          ),
         ),
       ),
     );

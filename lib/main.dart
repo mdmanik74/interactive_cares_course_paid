@@ -8,15 +8,35 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Flutter demo",
-      theme: ThemeData(primarySwatch: Colors.amber),
-      darkTheme: ThemeData(primarySwatch: Colors.green),
-      color: Colors.black,
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          appBar: AppBar(
-        title: const Text('Flutter Demo Test'),
-      )),
+        appBar: AppBar(
+          title: const Text('Flutter Demo Test'),
+        ),
+
+        //scaffold widget
+        drawer: const Drawer(
+            child: Column(
+          children: [
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text("Home"),
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text("Home"),
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text("Home"),
+            ),
+          ],
+        )),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: const Icon(Icons.add),
+        ),
+      ),
     );
   }
 }

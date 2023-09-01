@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
       title: "Flutter demo",
       theme: ThemeData(primarySwatch: Colors.amber),
       darkTheme: ThemeData(primarySwatch: Colors.green),
-      color: Colors.amberAccent,
+      color: Colors.black,
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: AppBar(
-        title: const Text('Flutter Demo'),
+        title: const Text('Flutter Demo Test'),
       )),
     );
   }

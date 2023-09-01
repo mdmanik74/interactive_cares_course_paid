@@ -11,12 +11,21 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Flutter Demo Test'),
+          title: const Text('Insert Image Demo'),
         ),
-        body: const Center(
-          child: Text(
-            'Welcome Main Page',
-            style: TextStyle(color: Colors.black, fontSize: 40.0),
+        body: Center(
+          child: Column(
+            children: [
+              Image.asset(
+                'assets/images/images.jpeg',
+                height: 400,
+                width: 400,
+              ),
+              Image.asset(
+                'assets/images/maxresdefault.jpg',
+                scale: 4.5,
+              ),
+            ],
           ),
         ),
       ),

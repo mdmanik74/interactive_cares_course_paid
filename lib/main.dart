@@ -1,25 +1,22 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // Material App
     return MaterialApp(
-
-        // Scaffold Widget
-        home: Scaffold(
-      appBar: AppBar(
-        // AppBar takes a Text Widget
-        // in it's title parameter
-        title: const Text('GFG'),
-      ),
-      body: const Center(child: Text('Hello World')),
-    ));
+      title: "Flutter demo",
+      theme: ThemeData(primarySwatch: Colors.amber),
+      darkTheme: ThemeData(primarySwatch: Colors.green),
+      color: Colors.amberAccent,
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+          appBar: AppBar(
+        title: const Text('Flutter Demo'),
+      )),
+    );
   }
 }

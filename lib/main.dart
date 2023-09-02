@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:source_code/simple_biz_card.dart';
+import 'package:source_code/custom_fonts.dart';
 
 void main() => runApp(const MyApp());
 
@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.amber,
-          title: const Text('Simple Bussines Card App'),
+          title: const Text('Custom Fonts App'),
           centerTitle: true,
         ),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.black,
 
         /*
         body: Center(
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         */
-        body: SimpleBizCard(),
+        body: CustomFonts(),
       ),
     );
   }

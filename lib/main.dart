@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:source_code/simple_biz_card.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,8 +12,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Insert Image Demo'),
+          backgroundColor: Colors.amber,
+          title: const Text('Simple Bussines Card App'),
+          centerTitle: true,
         ),
+        backgroundColor: Colors.blueGrey,
+
+        /*
         body: Center(
           child: Column(
             children: [
@@ -28,6 +34,8 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
+        */
+        body: SimpleBizCard(),
       ),
     );
   }

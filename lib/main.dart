@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:source_code/custom_fonts.dart';
+
+//import 'package:source_code/simple_biz_card.dart';
+import 'package:source_code/source/my_mood.dart';
 
 void main() => runApp(const MyApp());
 
@@ -12,11 +14,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.amber,
-          title: const Text('Custom Fonts App'),
-          centerTitle: true,
+          backgroundColor: Colors.black26,
+          title: const Text('My Mood'),
+          //centerTitle: true,
         ),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.blueGrey,
 
         /*
         body: Center(
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         */
-        body: CustomFonts(),
+        body: MyMood(),
       ),
     );
   }

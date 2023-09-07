@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:source_code/source/inspiration_app.dart';
 import 'package:source_code/source/message_chat.dart';
 //import 'package:source_code/source/audio_package.dart';
 //import 'package:source_code/source/login_page.dart';
@@ -23,13 +24,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: const Color.fromRGBO(240, 240, 240, 1),
         appBar: AppBar(
-          title: const Text('Flutter Message Desgin'),
-          backgroundColor: Colors.amberAccent,
+          title: const Text('Flutter Inspiration Desgin'),
+          backgroundColor: Colors.black,
+          elevation: 0,
+          leading: IconButton(
+            icon: const Icon(
+              Icons.menu,
+              color: Colors.white,
+            ),
+            onPressed: () {},
+          ),
           centerTitle: true,
         ),
-        body: MessageChat(),
-        backgroundColor: Colors.greenAccent,
+        body: InspirationApp(),
       ),
     );
   }

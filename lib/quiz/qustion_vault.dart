@@ -61,12 +61,11 @@ class QuestionVault {
     return _questionSet[_questionNumber].img;
   }
 
-  bool getAnswer(){
-     return _questionSet[_questionNumber].ans;
-
-    
+  bool getAnswer() {
+    return _questionSet[_questionNumber].ans;
   }
- bool isFinished() {
+
+  bool isFinished() {
     if (_questionNumber >= _questionSet.length - 1) {
       return true;
     } else {
@@ -77,6 +76,4 @@ class QuestionVault {
   void reset() {
     _questionNumber = 0;
   }
-}
-
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:source_code/quiz_app/homepage.dart';
+//import 'package:source_code/quiz_app/homepage.dart';
+import 'package:source_code/quiz_app/quizscreens.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Quiz App',
       theme: ThemeData.dark(),
-      home: HomePages(),
+      home: QuizScreen(),
     );
   }
 }

@@ -16,7 +16,7 @@ class HomePages extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Spacer(
+                  const Spacer(
                     flex: 2,
                   ),
                   Text(
@@ -30,7 +30,7 @@ class HomePages extends StatelessWidget {
                           color: Colors.white,
                         ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   const TextField(
                     decoration: InputDecoration(
                         fillColor: Color(0x0ff1c260),
@@ -40,13 +40,13 @@ class HomePages extends StatelessWidget {
                             borderRadius:
                                 BorderRadius.all(Radius.circular(50)))),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   InkWell(
                     onTap: () {},
                     child: Container(
                       width: double.infinity,
                       alignment: Alignment.center,
-                      padding: const EdgeInsets.all(kDefaultPadding * 0.75),
+                      padding: const EdgeInsets.all(kDefaultPadding * 0.85),
                       decoration: const BoxDecoration(
                         gradient: kPrimaryGradient,
                         borderRadius: BorderRadius.all(
@@ -62,7 +62,7 @@ class HomePages extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Spacer(
+                  const Spacer(
                     flex: 2,
                   ),
                 ],

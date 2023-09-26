@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:source_code/constants.dart';
+import 'package:source_code/quiz_app/questions.dart';
 
 class QuizScreen extends StatefulWidget {
   const QuizScreen({Key? key}) : super(key: key);
@@ -34,6 +35,7 @@ class _QuizScreenState extends State<QuizScreen> {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                   width: double.infinity,
@@ -71,6 +73,45 @@ class _QuizScreenState extends State<QuizScreen> {
                       ))
                     ],
                   ),
+                ),
+                Text.rich(
+                  TextSpan(
+                      text: 'Question 1',
+                      style: Theme.of(context)
+                          .textTheme
+                          .headlineSmall
+                          ?.copyWith(color: kSecondaryColor),
+                      children: [
+                        TextSpan(
+                          text: '/10',
+                          style: Theme.of(context)
+                              .textTheme
+                              .headlineMedium
+                              ?.copyWith(color: kSecondaryColor),
+                        )
+                      ]),
+                ),
+                const Divider(
+                  thickness: 1.5,
+                  color: Colors.white,
+                ),
+                const SizedBox(
+                  height: kDefaultPadding,
+                ),
+                Container(
+                  padding: EdgeInsets.all(kDefaultPadding),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25),
+                      color: Colors.white),
+                  child: Column(children: [
+                    Text(
+                      sample_data[0]['question'],
+                      style: Theme.of(context)
+                          .textTheme
+                          .headlineSmall
+                          ?.copyWith(color: kBlackColor),
+                    )
+                  ]),
                 ),
               ],
             ),
